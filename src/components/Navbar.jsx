@@ -2,34 +2,34 @@ import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-const[user,setUser]=useState(null);
-const navigate=useNavigate();
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
 
-// load user from local storage
-useEffect(() =>{
-  const storedUser=localStorage.getItem("user");
-  if (storedUser)
-  {
-    setUser(JSON.parse(storedUser));
+  // load user from local storage
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  // log outr function
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    setUser(null);
+    navigate("/signin");
+
   }
-},[]);
-
-// log outr function
-const handleLogout=()=>{
- localStorage.removeItem("user");
- setUser(null);
- navigate("/signin");
-
-}
 
 
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-dark bg-success px-3'>
-      <NavLink to="/" className="navbar-brand text-light fw-bold">
-        MALYANNA
-      </NavLink>
+    <nav className='navbar navbar-expand-lg navbar-dark bg-success px-2 py-1'>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="malyanna_farm_icon.svg" width="36" height="36" />
+        <span class="brand-name">Malyanna Farm</span>
+      </a>
 
 
       {/* mobile toggle */}
@@ -50,6 +50,9 @@ const handleLogout=()=>{
           <li className='nav-item'>
             <NavLink to="/addproduct" className="nav-link">Add product</NavLink>
           </li>
+          <li>
+            <NavLink to="" data-bs-target="#about" className="nav-link" >About</NavLink>
+          </li>
 
 
 
@@ -57,39 +60,39 @@ const handleLogout=()=>{
           {user ? (
             <>
 
-            
-            {/* username*/}
-           <li className='nav-item'>
-            <span className='nav-link text-success fw-bold'>
-              {user.username}
-            </span>
-           </li>
+
+              {/* username*/}
+              <li className='nav-item'>
+                <span className='nav-link text-success fw-bold'>
+                  {user.username}
+                </span>
+              </li>
 
 
-           {/* this the log out */}
-           <li className='nav-item'>
-            <button 
-            onClick={handleLogout}
-            className='btn btn-sm btn-danger ms-2'>
-              Logout
-            </button>
-           </li>
+              {/* this the log out */}
+              <li className='nav-item'>
+                <button
+                  onClick={handleLogout}
+                  className='btn btn-sm btn-danger ms-2'>
+                  Logout
+                </button>
+              </li>
             </>
-          ):
+          ) :
 
-          (
-            <>
-          <li className='nav-item'>
-            <NavLink className='nav-link' to="/signin">Signin</NavLink>
-          </li>
-          
-          <li  className='nav-item'>
-            <NavLink className='nav-link' to="/signup">Signup</NavLink>
-          </li>
-          </>
-          )}
+            (
+              <>
+                <li className='nav-item'>
+                  <NavLink className='nav-link' to="/signin">Signin</NavLink>
+                </li>
 
-          
+                <li className='nav-item'>
+                  <NavLink className='nav-link' to="/signup">Register</NavLink>
+                </li>
+              </>
+            )}
+
+
         </ul>
       </div>
 

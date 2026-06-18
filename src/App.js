@@ -15,9 +15,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <header className="App-header">
-        <h1 className='text-light'>Malyanna farm</h1>
-      </header>
 
        {/* the navigation component */}
       <Navbar/>
@@ -31,6 +28,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/addproduct' element={<Addproducts/>}/>
+        <Route path='/aboutus' element={<aboutus/>}/>
         <Route path='*' element={<Notfound/>}/>
       </Routes>
 

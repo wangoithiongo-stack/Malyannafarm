@@ -106,7 +106,7 @@ const handlesubmit = async (e) => {
 
           <input type="submit"
           value="Add product" 
-          className='btn btn-info'/>
+          className='btn btn-success'/>
         </form>
       </div>
 

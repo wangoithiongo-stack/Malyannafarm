@@ -95,7 +95,7 @@ const Signin = () => {
 
           <input type="submit"
             value="Signin"
-            className='btn btn-outline-primary' />
+            className='btn btn-outline-success' />
 
         </form>
       </div>
