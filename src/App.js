@@ -6,6 +6,7 @@ import Signin from './components/Signin';
 import Addproducts from './components/Addproducts';
 import Makepayment from './components/Makepayment';
 import Notfound from './components/Notfound';
+import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css"; 
 import "bootstrap/dist/js/bootstrap.min.js"
 
