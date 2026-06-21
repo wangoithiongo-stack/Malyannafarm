@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Getproducts from './components/Getproducts';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
@@ -14,21 +14,18 @@ function App() {
     <Router>
       <div className="App">
 
-      <Routes>
-        <Route path='/' element={<Getproducts/>}/>
-        <Route path='/signup' element={<Signup/>}/>
-        <Route path='/signin' element={<Signin/>}/>
-        <Route path='/addproduct' element={<Addproducts/>}/>
-        <Route path='/makepayment' element={<Makepayment/>}/>
-        <Route path='*' element={<Notfound/>}/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Getproducts/>}/>
+          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/signin' element={<Signin/>}/>
+          <Route path='/addproduct' element={<Addproducts/>}/>
+          <Route path='/makepayment' element={<Makepayment/>}/>
+          <Route path='*' element={<Notfound/>}/>
+        </Routes>
 
-
-      {/* footer component */}
-     <Footer/>
-    </div>
+      </div>
     </Router>
-  );
+  )
 }
 
 export default App;
