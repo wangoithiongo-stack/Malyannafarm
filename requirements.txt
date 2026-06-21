@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-gunicorn==26.0.0
-packaging==26.2
-=======
-Flask==3.x.x
-flask-cors==x.x.x
-mysql-connector-python==x.x.x
-# ... your other packages
+flask==2.1.0
+flask-cors
+flask-sqlalchemy
+pymysql
 gunicorn
->>>>>>> 170ff4d9c6384f5fca088315e3ad5a60069c4998
