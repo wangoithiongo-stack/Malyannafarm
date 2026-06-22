@@ -36,7 +36,7 @@ const Addproducts = () => {
       formdata.append("product_cost", product_cost)
       formdata.append("photo", product_photo)
 
-      const response = await fetch('/api/products', { method: 'POST', body: formData });
+      const response = await fetch('/api/products', { method: 'POST', body: formdata });
 if (!response.ok) {
   throw new Error('Failed to upload product');
 }
