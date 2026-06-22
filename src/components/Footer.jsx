@@ -23,16 +23,16 @@ const Footer = () => {
                             Connecting farmers to consumers through innovative digital solutions.
                         </p>
                         <div className="d-flex gap-3 mt-3">
-                            <a href="#" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
+                            <a href="/" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
                                 <i className="bi bi-facebook fs-5"></i>
                             </a>
-                            <a href="#" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
+                            <a href="/" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
                                 <i className="bi bi-twitter-x fs-5"></i>
                             </a>
-                            <a href="#" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
+                            <a href="/" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
                                 <i className="bi bi-instagram fs-5"></i>
                             </a>
-                            <a href="#" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
+                            <a href="/" className="text-white-50 hover-text-success" style={{ transition: 'color 0.3s' }}>
                                 <i className="bi bi-youtube fs-5"></i>
                             </a>
                         </div>

@@ -7,7 +7,8 @@ const Signin = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState("")
-    const [success, setSuccess] = useState("")
+    // eslint-disable-next-line no-unused-vars
+    const [success, setSuccess] = useState()
     const [error, setError] = useState("")
 
     const navigate = useNavigate()
@@ -42,7 +43,7 @@ const Signin = () => {
             <div className='row justify-content-center'>
                 <div className='col-md-8 col-lg-6 col-xl-5'>
                     <div className="card border-0 shadow-lg rounded-4 overflow-hidden">
-                        
+
                         {/* Header with Logo */}
                         <div className="bg-success p-4 text-center position-relative">
                             {/* Decorative elements */}
@@ -50,15 +51,15 @@ const Signin = () => {
                                 background: 'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.05) 0%, transparent 50%)',
                                 pointerEvents: 'none'
                             }}></div>
-                            
+
                             {/* Logo Image */}
                             <div className="d-flex justify-content-center mb-3">
-                                <img 
-                                    src="/malyanna_farm_icon.svg" 
-                                    alt="Malyanna Farm" 
+                                <img
+                                    src="/malyanna_farm_icon.svg"
+                                    alt="Malyanna Farm"
                                     className="shadow-lg"
-                                    style={{ 
-                                        width: '80px', 
+                                    style={{
+                                        width: '80px',
                                         height: '80px',
                                         borderRadius: '50%',
                                         background: 'white',
@@ -68,7 +69,7 @@ const Signin = () => {
                                     }}
                                 />
                             </div>
-                            
+
                             <h2 className="text-white fw-bold mb-0">Welcome Back</h2>
                             <p className="text-white-50 mb-0">Sign in to your account</p>
                         </div>
@@ -83,14 +84,14 @@ const Signin = () => {
                                     {loading}
                                 </div>
                             )}
-                            
+
                             {success && (
                                 <div className="alert alert-success border-0 d-flex align-items-center gap-2">
                                     <i className="bi bi-check-circle-fill"></i>
                                     {success}
                                 </div>
                             )}
-                            
+
                             {error && (
                                 <div className="alert alert-danger border-0 d-flex align-items-center gap-2">
                                     <i className="bi bi-exclamation-circle-fill"></i>
@@ -107,7 +108,7 @@ const Signin = () => {
                                         <span className="input-group-text bg-light border-0">
                                             <i className="bi bi-envelope"></i>
                                         </span>
-                                        <input 
+                                        <input
                                             type="email"
                                             placeholder="Enter your email"
                                             value={email}
@@ -124,13 +125,13 @@ const Signin = () => {
                                         <label className="form-label fw-semibold">
                                             <i className="bi bi-lock me-1"></i> Password
                                         </label>
-                                        <a href="#" className="text-success text-decoration-none small">Forgot Password?</a>
+                                        <a href="/#" className="text-success text-decoration-none small">Forgot Password?</a>
                                     </div>
                                     <div className="input-group">
                                         <span className="input-group-text bg-light border-0">
                                             <i className="bi bi-lock"></i>
                                         </span>
-                                        <input 
+                                        <input
                                             type="password"
                                             placeholder="Enter your password"
                                             value={password}
@@ -142,8 +143,8 @@ const Signin = () => {
                                     </div>
                                 </div>
 
-                                <button 
-                                    type="submit" 
+                                <button
+                                    type="submit"
                                     className="btn btn-success btn-lg w-100 rounded-pill py-3 fw-bold shadow-sm hover-shadow"
                                     disabled={loading}
                                 >
