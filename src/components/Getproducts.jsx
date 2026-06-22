@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'  // Add this import
+import { useNavigate } from 'react-router-dom'  
 import Carousel from './Carousel'
 import Navbar from './Navbar'
 import './Getproducts.css'
@@ -164,7 +164,7 @@ const Getproducts = () => {
                                 <i className="bi bi-lightning-charge-fill fs-5"></i>
                             </div>
                             <div>
-                                <h6 className="fw-bold mb-1">Fast Delivery</h6>
+                                <h6 className="fw-bold mb-1 text-success">Fast Delivery</h6>
                                 <p className="small text-secondary mb-0">Quick turnaround</p>
                             </div>
                         </div>
@@ -175,7 +175,7 @@ const Getproducts = () => {
                                 <i className="bi bi-shield-check fs-5"></i>
                             </div>
                             <div>
-                                <h6 className="fw-bold mb-1">Secure</h6>
+                                <h6 className="fw-bold mb-1 text-success">Secure</h6>
                                 <p className="small text-secondary mb-0">Enterprise-grade</p>
                             </div>
                         </div>
@@ -186,7 +186,7 @@ const Getproducts = () => {
                                 <i className="bi bi-people-fill fs-5"></i>
                             </div>
                             <div>
-                                <h6 className="fw-bold mb-1">User Focused</h6>
+                                <h6 className="fw-bold mb-1 text-success">User Focused</h6>
                                 <p className="small text-secondary mb-0">UX-first approach</p>
                             </div>
                         </div>
@@ -197,7 +197,7 @@ const Getproducts = () => {
                                 <i className="bi bi-headset fs-5"></i>
                             </div>
                             <div>
-                                <h6 className="fw-bold mb-1">24/7 Support</h6>
+                                <h6 className="fw-bold mb-1 text-success">24/7 Support</h6>
                                 <p className="small text-secondary mb-0">Always here</p>
                             </div>
                         </div>
