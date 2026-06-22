@@ -1,3 +1,5 @@
+// import axios from 'axios'
+import axios from 'axios'
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -34,12 +36,8 @@ const Addproducts = () => {
       formdata.append("product_cost", product_cost)
       formdata.append("photo", product_photo)
 
-      const response = await fetch('/api/products', { method: 'POST', body: formdata });
-if (!response.ok) {
-  throw new Error('Failed to upload product');
-}
-const response = await response.json();
-// use data...
+      // Step 10 : Interact with the axios module
+      const response = await axios.post("https://wangui-hsk.alwaysdata.net/api/addproduct", formdata)
 
       // Step 11 : Setback the loading hook to default
       setLoading("")
