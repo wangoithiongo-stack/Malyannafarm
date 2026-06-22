@@ -1,5 +1,3 @@
-// import axios from 'axios'
-import axios from 'axios'
 import React, { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -40,7 +38,7 @@ const Addproducts = () => {
 if (!response.ok) {
   throw new Error('Failed to upload product');
 }
-const data = await response.json();
+const response = await response.json();
 // use data...
 
       // Step 11 : Setback the loading hook to default
