@@ -8,7 +8,7 @@ const Carousel = () => {
             data-bs-ride='carousel' 
             style={{ 
                 maxWidth: '1400px', 
-                margin: '80px auto 0 auto',  // Added top margin to account for navbar
+                margin: '80px auto 0 auto',  
                 paddingTop: '10px'
             }}
         >
@@ -28,21 +28,21 @@ const Carousel = () => {
             {/* slides */}
             <div className='carousel-inner'>
                 <div className='carousel-item active'>
-                    <img src={"images/Ofarm.jpeg"} className='d-block w-100 carousel-img' alt="Farm" style={{ height: '600px', objectFit: 'cover' }} />
+                    <img src={"images/whatsapp1.jpeg"} className='d-block w-100 carousel-img' alt="Farm" style={{ height: '600px', objectFit: 'cover' }} />
                     <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded-3" style={{ bottom: '80px' }}>
                         <h3 className="fw-bold">Fresh From Our Farm</h3>
                         <p>Quality produce delivered to your doorstep</p>
                     </div>
                 </div>
                 <div className='carousel-item'>
-                    <img src={"images/farmer.jpeg"} className='d-block w-100 carousel-img' alt="Farmer" style={{ height: '600px', objectFit: 'cover' }} />
+                    <img src={"images/whatsapp2.jpeg"} className='d-block w-100 carousel-img' alt="Farmer" style={{ height: '600px', objectFit: 'cover' }} />
                     <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded-3" style={{ bottom: '80px' }}>
                         <h3 className="fw-bold">Meet Our Farmers</h3>
                         <p>Dedicated to sustainable farming practices</p>
                     </div>
                 </div>
                 <div className='carousel-item'>
-                    <img src={"images/market.jpeg"} className='d-block w-100 carousel-img' alt="Market" style={{ height: '600px', objectFit: 'cover' }} />
+                    <img src={"images/whatsapp3.jpeg"} className='d-block w-100 carousel-img' alt="Market" style={{ height: '600px', objectFit: 'cover' }} />
                     <div className="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded-3" style={{ bottom: '80px' }}>
                         <h3 className="fw-bold">Fresh Market</h3>
                         <p>Connecting farmers directly to consumers</p>
