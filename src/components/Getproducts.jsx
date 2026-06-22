@@ -126,7 +126,7 @@ const Getproducts = () => {
             <div className="about-image-wrapper position-relative">
                 <div className="about-image-main position-relative">
                     <img
-                        src="/images/malyannafarmaboutusphoto.jpg"
+                        src="/images/chillifarm.jpg"
                         alt="About Sokogarden"
                         className="img-fluid rounded-4 shadow-lg"
                         style={{ height: '500px', width: '100%', objectFit: 'cover' }}
